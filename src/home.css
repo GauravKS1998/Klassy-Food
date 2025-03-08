@@ -1,0 +1,46 @@
+#home {
+    width: 100%;
+    height: 88vh;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    place-content: center;
+}
+.home_left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    place-content: center;
+    background-image: url(./assets/images/leaves_above.png);
+    background-repeat: no-repeat;
+    background-size: 130% 100%;
+    background-color: #fb6354;
+    background-blend-mode: multiply;
+    gap: 3vh;
+    color: white;
+}
+.home_left h1 {
+    font-family: "Croissant One", serif;
+    font-style: normal;
+    font-size: 250%;
+}
+.home_left p {
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.home_left button {
+    justify-self: baseline;
+    padding: 10px 20px;
+    color: #fb6354;
+    font-size: 90%;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.home_right {
+    width: 100%;
+    background-image: url(./assets/images/klassy1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,107 @@
+#menu {
+    width: 100%;
+    height: 100%;
+    padding: 10vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    place-content: center;
+    gap: 8vh;
+    background-color: whitesmoke;
+}
+.menu_head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 85%;
+    place-content: center;
+    gap: 3vh;
+}
+.menu_head h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #fb6354;
+}
+.menu_head h3 span {
+    width: 50px;
+    height: 2px;
+    background-color: #fb6354;
+}
+.menu_body {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+    grid-template-rows: 100%;
+    gap: 3vw;
+    overflow: auto;
+}
+.menu_body::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_scroll_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 200%;
+    color: #fb6354;
+}
+#scroll_left,
+#scroll_right {
+    cursor: pointer;
+}
+
+.menu_item {
+    width: 100%;
+    height: 45vh;
+    box-shadow: 5px 5px 10px gray;
+    position: relative;
+    display: grid;
+    color: white;
+    overflow: hidden;
+}
+.menu_item span {
+    background-color: #fb6354;
+    position: absolute;
+}
+.menu_item img {
+    width: 100%;
+}
+.menu_item span h4 {
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.menu_details {
+    width: 100%;
+    height: 22vh;
+    padding: 3vh 0;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-content: baseline;
+    background-color: #fb6354;
+    gap: 3vh;
+    position: absolute;
+    bottom: -20vh;
+    transition: all 0.5s ease;
+}
+.menu_item:hover .menu_details {
+    bottom: 0;
+}
+.menu_details p {
+    font-size: 90%;
+}
+.menu_details button {
+    background-color: transparent;
+    font-weight: bold;
+    justify-self: baseline;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+}
