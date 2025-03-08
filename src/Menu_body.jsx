@@ -7,48 +7,49 @@ import cheese from "./assets/images/cheese.jpg";
 import "./Menu.css";
 import { IoIosArrowDown } from "react-icons/io";
 
+let menu = [
+    {
+        name: "Klassy Cup Cake",
+        price: "$ 8.50",
+        details:
+            "A delicious cup cake with a hint of vanilla and a sprinkle of sugar.",
+        img: chicken_salad,
+    },
+    {
+        name: "Klassy Fruit Salad",
+        price: "$ 6.50",
+        details: "A mix of fruits with a hint of honey.",
+        img: fruit_salad,
+    },
+    {
+        name: "Klassy Orange Juice",
+        price: "$ 4.50",
+        details: "A glass of freshly squeezed orange juice.",
+        img: orange,
+    },
+    {
+        name: "Klassy Egg Bread",
+        price: "$ 7.50",
+        details:
+            "A slice of egg bread. dolor sit amet consectetur , adipisicing elit. Nihil, officia.",
+        img: egg,
+    },
+    {
+        name: "Klassy Veg Soup",
+        price: "$ 5.50",
+        details:
+            "A bowl of veg soup. dolor sit amet consectetur , adipisicing elit. Nihil, officia.",
+        img: veg_soup,
+    },
+    {
+        name: "Klassy Cheese",
+        price: "$ 9.50",
+        details: "A slice of cheese. Magni numquam eaque quae!",
+        img: cheese,
+    },
+];
+
 function Menu_body() {
-    let menu = [
-        {
-            name: "Klassy Cup Cake",
-            price: "$ 8.50",
-            details:
-                "A delicious cup cake with a hint of vanilla and a sprinkle of sugar.",
-            img: chicken_salad,
-        },
-        {
-            name: "Klassy Fruit Salad",
-            price: "$ 6.50",
-            details: "A mix of fruits with a hint of honey.",
-            img: fruit_salad,
-        },
-        {
-            name: "Klassy Orange Juice",
-            price: "$ 4.50",
-            details: "A glass of freshly squeezed orange juice.",
-            img: orange,
-        },
-        {
-            name: "Klassy Egg Bread",
-            price: "$ 7.50",
-            details:
-                "A slice of egg bread. dolor sit amet consectetur , adipisicing elit. Nihil, officia.",
-            img: egg,
-        },
-        {
-            name: "Klassy Veg Soup",
-            price: "$ 5.50",
-            details:
-                "A bowl of veg soup. dolor sit amet consectetur , adipisicing elit. Nihil, officia.",
-            img: veg_soup,
-        },
-        {
-            name: "Klassy Cheese",
-            price: "$ 9.50",
-            details: "A slice of cheese. Magni numquam eaque quae!",
-            img: cheese,
-        },
-    ];
     return menu.map((item) => {
         return (
             <>
